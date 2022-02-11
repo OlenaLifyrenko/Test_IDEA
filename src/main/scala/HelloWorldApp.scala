@@ -1,5 +1,4 @@
 
-
 object HelloWorldApp extends App {
 
   val anton: String = "Anton"
@@ -12,14 +11,18 @@ object HelloWorldApp extends App {
   }
 
   def ageGroup(age: Int): String = {
-    if(age == 2) s"You are a baby"
-    else if(age == 5) s"You are a child"
-    else if(age == 18) s"You are an adult"
+    if (age == 2) s"You are a baby"
+    else if (age == 5) s"You are a child"
+    else if (age == 18) s"You are an adult"
     else s"I don't know your age"
 
   }
 
-  val response = ageGroup(age = 5)
+  def forYou(letters: String): Int = {
+    val len = letters.length()
+    println( "String Length is : " + len )
+    len
+  }
 
-  println(response)
+  forYou("Ijhjhhjv")
 }
