@@ -10,19 +10,21 @@ object HelloWorldApp extends App {
     else s"I don't know who you are, $name"
   }
 
-  def ageGroup(age: Int): String = {
+  def checkAgeGroup(age: Int): String = {
     if (age == 2) s"You are a baby"
-    else if (age == 5) s"You are a child"
-    else if (age == 18) s"You are an adult"
+    else if (age <= 5) s"You are a child"
+    else if (age >= 18) s"You are an adult"
     else s"I don't know your age"
 
   }
+  val ageGradation = checkAgeGroup(age = 20)
+  println(ageGradation)
 
-  def forYou(letters: String): Int = {
-    val len = letters.length()
-    println( "String Length is : " + len )
-    len
-  }
+  //def forYou(letters: String): Int = {
+    //val len = letters.length()
+    //println( "String Length is : " + len )
+    //len
+ // }
 
-  forYou("Ijhjhhjv")
+  //forYou("Ijhjhhjv")
 }
