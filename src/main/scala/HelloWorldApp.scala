@@ -17,14 +17,13 @@ object HelloWorldApp extends App {
     else s"I don't know your age"
 
   }
-  val ageGradation = checkAgeGroup(age = 20)
+  val ageGradation = checkAgeGroup(age = 0)
   println(ageGradation)
 
-  //def forYou(letters: String): Int = {
-    //val len = letters.length()
-    //println( "String Length is : " + len )
-    //len
- // }
-
-  //forYou("Ijhjhhjv")
+  def forYou(letters: String): Int = {
+    val len = letters.length()
+      println( "String Length is : " + len )
+  len
+  }
+  forYou("I love you")
 }
